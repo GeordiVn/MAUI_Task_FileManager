@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+             x:Class="TaskFileManager.PopUpNewTask" Color="GhostWhite" Size="500"
+            x:Name="popup">
+
+    <ScrollView>
+        <VerticalStackLayout Grid.Row="0" Grid.Column="0" Padding="10,10,10,10" >
+            <Label x:Name="labelHeader" FontSize="Title" Text="Nieuwe task" HorizontalOptions="Center"></Label>
+            <Label Text="Selecteer datum task"></Label>
+            <DatePicker x:Name="datePicker"></DatePicker>
+            <Label Text="Titel"></Label>
+            <Entry x:Name="entryTitle" Placeholder="Titel"></Entry>
+            <Label Text="Omschrijving"></Label>
+            <Editor x:Name="editorOmschrijving" HeightRequest="300"></Editor>
+            <Button HorizontalOptions="Center" x:Name="buttonSave" Text="Save"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+       
+    
+   
+</mct:Popup>
